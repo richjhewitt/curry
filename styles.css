@@ -274,11 +274,38 @@ body {
   transform: rotate(180deg);
 }
 
+/* ── CARD META EXTRAS ── */
+.recipe-desc {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+.recipe-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.tag {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+}
+
+
 /* ── EXPANDED DETAILS ── */
 .recipe-details {
   display: none;
   border-top: 1px solid var(--border-subtle);
-  padding: 1rem 1.25rem 1.25rem;
+  padding: 0 1.25rem 1.25rem;
   animation: slideDown 0.2s ease;
 }
 
@@ -291,36 +318,93 @@ body {
   display: block;
 }
 
-.detail-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-  margin-bottom: 1rem;
+/* ── STAGES ── */
+.stages {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 1rem;
 }
 
-@media (max-width: 480px) {
-  .detail-grid { grid-template-columns: 1fr; }
+.stage {
+  position: relative;
+  padding-left: 2.5rem;
+  padding-bottom: 1.25rem;
 }
 
-.detail-section h4 {
-  font-size: 0.65rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--spice-chilli);
+/* vertical connecting line between stages */
+.stage:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 0.85rem;
+  top: 2rem;
+  bottom: 0;
+  width: 1px;
+  background: var(--border-mid);
+}
+
+.stage-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 0.6rem;
 }
 
-.detail-section ul,
-.detail-section ol {
-  padding-left: 1.25rem;
+.stage-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-mid);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.stage-num {
+  font-size: 0.62rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+}
+
+.stage-name {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--spice-chilli);
+}
+
+.stage-steps {
+  padding-left: 1.1rem;
   font-size: 0.875rem;
   color: #c0a888;
   line-height: 1.75;
+  margin: 0;
 }
 
-.detail-section li + li {
-  margin-top: 2px;
+.stage-steps li + li {
+  margin-top: 3px;
+}
+
+/* ingredient gathering — unordered, dimmer colour */
+.stage:first-child .stage-steps {
+  color: var(--text-secondary);
+  list-style: none;
+  padding-left: 0;
+}
+
+.stage:first-child .stage-steps li::before {
+  content: '—';
+  color: var(--text-muted);
+  margin-right: 6px;
+  font-size: 0.8rem;
 }
 
 /* notes box */
@@ -330,6 +414,7 @@ body {
   border-left: 3px solid var(--spice-turmeric);
   border-radius: var(--radius-sm);
   padding: 0.75rem 1rem;
+  margin-top: 0.25rem;
 }
 
 .recipe-notes h4 {
