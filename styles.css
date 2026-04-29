@@ -443,3 +443,39 @@ body {
   font-style: italic;
   font-family: var(--font-display);
 }
+/* ── CATEGORY SECTIONS ── */
+
+.category {
+  margin-bottom: 1rem;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.category-chevron {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.category.open .category-chevron {
+  transform: rotate(180deg);
+}
+
+.category-list {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category.open .category-list {
+  display: flex;
+}

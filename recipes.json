@@ -1,300 +1,205 @@
 {
-  "recipes": [
+  "categories": [
     {
       "name": "Curried Pasta",
-      "description": "A one-pot wonder — lentils, pasta and a proper curry base all cooked together under pressure. Comfort food from a small kitchen.",
-      "cook_time": "5 min",
-      "tags": ["lentil", "pasta", "one-pot"],
-      "stages": [
+      "recipes": [
         {
-          "name": "Ingredient gathering",
-          "icon": "🧺",
-          "steps": [
-            "Tinned tomatoes (1 can)",
-            "Red lentils (handful)",
-            "Pasta (2 large handfuls)",
-            "Onion (1 medium)",
-            "Ginger-garlic paste (1 tbsp)",
-            "Cumin seeds (1 tsp)",
-            "Ground coriander (1 tsp)",
-            "Garam masala (½ tsp)",
-            "Turmeric (½ tsp)",
-            "Chilli flakes (to taste)",
-            "Oil (2 tbsp)",
-            "Water (~2.5 cups)"
+          "name": "Curried Pasta",
+          "description": "A one-pot wonder — lentils, pasta and a proper curry base all cooked together under pressure. Comfort food from a small kitchen.",
+          "cook_time": "5 min",
+          "tags": ["lentil", "pasta", "one-pot"],
+          "stages": [
+            {
+              "name": "Ingredient gathering",
+              "icon": "🧺",
+              "steps": [
+                "Tinned tomatoes (1 can)",
+                "Red lentils (handful)",
+                "Pasta (2 large handfuls)",
+                "Onion (1 medium)",
+                "Ginger-garlic paste (1 tbsp)",
+                "Cumin seeds (1 tsp)",
+                "Ground coriander (1 tsp)",
+                "Garam masala (½ tsp)",
+                "Turmeric (½ tsp)",
+                "Chilli flakes (to taste)",
+                "Oil (2 tbsp)",
+                "Water (~2.5 cups)"
+              ]
+            },
+            {
+              "name": "Choppy bit",
+              "icon": "🔪",
+              "steps": [
+                "Dice the onion fairly fine — it'll cook down under pressure so no need to be precious",
+                "If using fresh ginger and garlic, mince or grate them now (or just use paste, no shame)"
+              ]
+            },
+            {
+              "name": "Fry-y bit",
+              "icon": "🔥",
+              "steps": [
+                "Set Foodi to sauté, heat the oil",
+                "Add cumin seeds — wait for them to pop and go fragrant (30 seconds ish)",
+                "Add onion, cook until softened and going golden (5–7 min)",
+                "Add ginger-garlic paste, stir for a minute",
+                "Add turmeric, ground coriander, chilli flakes — stir and let it fry for 30 seconds",
+                "Pour in the tinned tomatoes and stir everything together",
+                "Let the tomato base bubble for 2–3 minutes to cook out the raw taste"
+              ]
+            },
+            {
+              "name": "Pressure cook",
+              "icon": "⚡",
+              "steps": [
+                "Add red lentils and pasta directly into the pot",
+                "Pour in ~2.5 cups of water — enough to just cover everything",
+                "Give it a good stir, make sure nothing is stuck to the bottom",
+                "Seal the lid, set to pressure cook HIGH for 5 minutes",
+                "Natural release for 5 minutes, then quick release the rest"
+              ]
+            },
+            {
+              "name": "Post pressure cook",
+              "icon": "✨",
+              "steps": [
+                "Stir well — it'll look thick and glossy",
+                "Add garam masala now and stir through",
+                "Taste and adjust salt and chilli",
+                "Wilt in a handful of spinach if you have it",
+                "Finish with a squeeze of lime and fresh coriander"
+              ]
+            }
+          ],
+          "notes": [
+            "The pasta absorbs a lot — if it's too thick just add a splash of hot water and stir",
+            "Red lentils dissolve almost completely and thicken the sauce beautifully",
+            "Works great with chickpeas instead of lentils for a chunkier texture"
           ]
         },
         {
-          "name": "Choppy bit",
-          "icon": "🔪",
-          "steps": [
-            "Dice the onion fairly fine — it'll cook down under pressure so no need to be precious",
-            "If using fresh ginger and garlic, mince or grate them now (or just use paste, no shame)"
-          ]
-        },
-        {
-          "name": "Fry-y bit",
-          "icon": "🔥",
-          "steps": [
-            "Set Foodi to sauté, heat the oil",
-            "Add cumin seeds — wait for them to pop and go fragrant (30 seconds ish)",
-            "Add onion, cook until softened and going golden (5–7 min)",
-            "Add ginger-garlic paste, stir for a minute",
-            "Add turmeric, ground coriander, chilli flakes — stir and let it fry for 30 seconds",
-            "Pour in the tinned tomatoes and stir everything together",
-            "Let the tomato base bubble for 2–3 minutes to cook out the raw taste"
-          ]
-        },
-        {
-          "name": "Pressure cook",
-          "icon": "⚡",
-          "steps": [
-            "Add red lentils and pasta directly into the pot",
-            "Pour in ~2.5 cups of water — enough to just cover everything",
-            "Give it a good stir, make sure nothing is stuck to the bottom",
-            "Seal the lid, set to pressure cook HIGH for 5 minutes",
-            "Natural release for 5 minutes, then quick release the rest"
-          ]
-        },
-        {
-          "name": "Post pressure cook",
-          "icon": "✨",
-          "steps": [
-            "Stir well — it'll look thick and glossy",
-            "Add garam masala now and stir through",
-            "Taste and adjust salt and chilli",
-            "Wilt in a handful of spinach if you have it",
-            "Finish with a squeeze of lime and fresh coriander"
+          "name": "Saag Paneer Pasta",
+          "description": "A caravan mashup — the rich spiced spinach base of saag paneer but with pasta cooked right in. Sounds weird, tastes brilliant.",
+          "cook_time": "4 min",
+          "tags": ["paneer", "spinach", "pasta", "saag"],
+          "stages": [
+            {
+              "name": "Ingredient gathering",
+              "icon": "🧺",
+              "steps": [
+                "Paneer (200g block)",
+                "Frozen spinach (3 large cubes) or fresh (big handful)",
+                "Pasta (2 large handfuls)",
+                "Onion (1 medium)",
+                "Tinned tomatoes (½ can)",
+                "Ginger-garlic paste (1 tbsp)",
+                "Cumin seeds (1 tsp)",
+                "Turmeric (½ tsp)",
+                "Ground coriander (1 tsp)",
+                "Garam masala (½ tsp)",
+                "Kasuri methi (1 tsp, optional)",
+                "Oil (2 tbsp)",
+                "Water (2 cups)"
+              ]
+            },
+            {
+              "name": "Choppy bit",
+              "icon": "🔪",
+              "steps": [
+                "Cut paneer into cubes",
+                "Dice the onion"
+              ]
+            },
+            {
+              "name": "Fry-y bit",
+              "icon": "🔥",
+              "steps": [
+                "Fry paneer until golden, set aside",
+                "Add cumin seeds",
+                "Cook onion until soft",
+                "Add ginger-garlic paste",
+                "Add spices",
+                "Add tomatoes",
+                "Add spinach and cook down"
+              ]
+            },
+            {
+              "name": "Pressure cook",
+              "icon": "⚡",
+              "steps": [
+                "Add pasta and water",
+                "Add paneer back in",
+                "Pressure cook HIGH 4 min",
+                "Quick release"
+              ]
+            },
+            {
+              "name": "Finish",
+              "icon": "✨",
+              "steps": [
+                "Stir gently",
+                "Add garam masala + kasuri methi",
+                "Adjust seasoning",
+                "Optional yoghurt/cream"
+              ]
+            }
+          ],
+          "notes": [
+            "Frozen spinach works great",
+            "Kasuri methi gives restaurant flavour",
+            "Add water if too thick"
           ]
         }
-      ],
-      "notes": [
-        "The pasta absorbs a lot — if it's too thick just add a splash of hot water and stir",
-        "Red lentils dissolve almost completely and thicken the sauce beautifully",
-        "Works great with chickpeas instead of lentils for a chunkier texture"
       ]
     },
     {
-      "name": "Chana Dal",
-      "description": "Split yellow peas cooked low and slow under pressure into a thick, deeply spiced dal. Dead simple, deeply satisfying.",
-      "cook_time": "15 min",
-      "tags": ["lentil", "dal", "veg"],
-      "stages": [
+      "name": "Curry",
+      "recipes": [
         {
-          "name": "Ingredient gathering",
-          "icon": "🧺",
-          "steps": [
-            "Chana dal / split yellow peas (200g) — soaked 30 min if you have time",
-            "Onion (1 large)",
-            "Tinned tomatoes (1 can)",
-            "Ginger-garlic paste (1 tbsp)",
-            "Cumin seeds (1 tsp)",
-            "Mustard seeds (½ tsp)",
-            "Turmeric (½ tsp)",
-            "Ground cumin (1 tsp)",
-            "Ground coriander (1 tsp)",
-            "Garam masala (½ tsp)",
-            "Dried chilli or chilli flakes (to taste)",
-            "Oil (2 tbsp)",
-            "Water (3 cups)"
-          ]
+          "name": "Chana Dal",
+          "description": "Split yellow peas cooked low and slow into a thick, deeply spiced dal.",
+          "cook_time": "15 min",
+          "tags": ["lentil", "dal", "veg"],
+          "stages": [],
+          "notes": []
         },
         {
-          "name": "Choppy bit",
-          "icon": "🔪",
-          "steps": [
-            "Dice the onion",
-            "Rinse the chana dal well until the water runs clear"
-          ]
-        },
-        {
-          "name": "Fry-y bit",
-          "icon": "🔥",
-          "steps": [
-            "Sauté mode, heat oil until shimmering",
-            "Add mustard seeds — wait for them to pop, then add cumin seeds",
-            "Add onion, cook down until deep golden — take your time here, 8–10 min",
-            "Add ginger-garlic paste, fry 1–2 minutes",
-            "Add turmeric, ground cumin, ground coriander and chilli — fry 30 seconds",
-            "Add tomatoes, cook down for 4–5 minutes until oil starts to separate from the masala"
-          ]
-        },
-        {
-          "name": "Pressure cook",
-          "icon": "⚡",
-          "steps": [
-            "Add drained chana dal to the pot",
-            "Pour in 3 cups of water",
-            "Stir well, seal the lid",
-            "Pressure cook HIGH for 15 minutes",
-            "Natural release for 10 minutes, then quick release"
-          ]
-        },
-        {
-          "name": "Post pressure cook",
-          "icon": "✨",
-          "steps": [
-            "Stir — the dal should be soft and some of it breaking down into the sauce",
-            "If too watery, sauté for a few minutes with the lid off to thicken",
-            "Add garam masala and stir through",
-            "Taste for salt and heat",
-            "Finish with a knob of butter or a drizzle of oil, fresh coriander, squeeze of lemon"
-          ]
+          "name": "Aloo Chana",
+          "description": "Potatoes and chickpeas in a thick, tangy tomato masala.",
+          "cook_time": "8 min",
+          "tags": ["potato", "chickpea", "veg"],
+          "stages": [],
+          "notes": []
         }
-      ],
-      "notes": [
-        "Soaking the dal cuts the pressure cook time down — skip it if you're in a hurry, just add 5 more minutes",
-        "Lovely with rice or just eaten as a thick soup straight from the bowl",
-        "The tarka (tempering the spices in oil at the start) is the most important bit — don't rush it"
       ]
     },
     {
-      "name": "Saag Paneer Pasta",
-      "description": "A caravan mashup — the rich spiced spinach base of saag paneer but with pasta cooked right in. Sounds weird, tastes brilliant.",
-      "cook_time": "4 min",
-      "tags": ["paneer", "spinach", "pasta", "saag"],
-      "stages": [
+      "name": "Indalian",
+      "recipes": [
         {
-          "name": "Ingredient gathering",
-          "icon": "🧺",
-          "steps": [
-            "Paneer (200g block)",
-            "Frozen spinach (3 large cubes) or fresh (big handful)",
-            "Pasta (2 large handfuls)",
-            "Onion (1 medium)",
-            "Tinned tomatoes (½ can)",
-            "Ginger-garlic paste (1 tbsp)",
-            "Cumin seeds (1 tsp)",
-            "Turmeric (½ tsp)",
-            "Ground coriander (1 tsp)",
-            "Garam masala (½ tsp)",
-            "Kasuri methi / dried fenugreek leaves (1 tsp) — optional but worth it",
-            "Oil (2 tbsp)",
-            "Water (2 cups)"
-          ]
+          "name": "Pasta Arrabiata",
+          "description": "Classic spicy tomato pasta — ready for crossover chaos.",
+          "cook_time": "10 min",
+          "tags": ["pasta", "spicy"],
+          "stages": [],
+          "notes": []
         },
         {
-          "name": "Choppy bit",
-          "icon": "🔪",
-          "steps": [
-            "Cut paneer into roughly 2cm cubes",
-            "Dice the onion"
-          ]
+          "name": "Aglio e Olio e Pepperoncino",
+          "description": "Garlic, oil, chilli — minimal, aggressive, perfect.",
+          "cook_time": "8 min",
+          "tags": ["pasta", "garlic"],
+          "stages": [],
+          "notes": []
         },
         {
-          "name": "Fry-y bit",
-          "icon": "🔥",
-          "steps": [
-            "Heat oil on sauté, add paneer cubes — fry until golden on a couple of sides, set aside",
-            "In the same oil, add cumin seeds",
-            "Add onion, cook until soft and lightly golden",
-            "Add ginger-garlic paste, stir 1 minute",
-            "Add turmeric and ground coriander, fry 30 seconds",
-            "Add tomatoes, cook for 3 minutes",
-            "Add spinach (from frozen is fine), stir until wilted into the base"
-          ]
-        },
-        {
-          "name": "Pressure cook",
-          "icon": "⚡",
-          "steps": [
-            "Add pasta to the pot and stir through the spinach masala",
-            "Pour in 2 cups water — the spinach adds liquid so go a touch less than usual",
-            "Nestle the paneer pieces back in on top",
-            "Seal lid, pressure cook HIGH 4 minutes",
-            "Quick release"
-          ]
-        },
-        {
-          "name": "Post pressure cook",
-          "icon": "✨",
-          "steps": [
-            "Stir gently — the paneer will be soft so don't mash it",
-            "Add garam masala and kasuri methi, stir through",
-            "The sauce should be thick and clinging to the pasta",
-            "Taste for salt",
-            "Finish with a little cream or yoghurt swirled through if you have it"
-          ]
+          "name": "Cacio e Pepe (Indalian?)",
+          "description": "Cheese, pepper… and potential madness.",
+          "cook_time": "7 min",
+          "tags": ["pasta", "cheese"],
+          "stages": [],
+          "notes": []
         }
-      ],
-      "notes": [
-        "Frozen spinach works great here — no need to defrost first",
-        "Kasuri methi gives it that proper restaurant saag flavour — find it in any Asian supermarket",
-        "If the sauce is too thick after pressure cooking, a splash of hot water loosens it right up"
-      ]
-    },
-    {
-      "name": "Aloo Chana",
-      "description": "Potatoes and chickpeas in a thick, tangy tomato masala. A proper filling caravan meal that costs almost nothing.",
-      "cook_time": "8 min",
-      "tags": ["potato", "chickpea", "chana", "aloo", "veg"],
-      "stages": [
-        {
-          "name": "Ingredient gathering",
-          "icon": "🧺",
-          "steps": [
-            "Potatoes (2 medium)",
-            "Tinned chickpeas (1 can, drained)",
-            "Tinned tomatoes (1 can)",
-            "Onion (1 medium)",
-            "Ginger-garlic paste (1 tbsp)",
-            "Cumin seeds (1 tsp)",
-            "Turmeric (½ tsp)",
-            "Ground cumin (1 tsp)",
-            "Ground coriander (1 tsp)",
-            "Amchur / dried mango powder (½ tsp) — gives it the tang",
-            "Garam masala (½ tsp)",
-            "Chilli (to taste)",
-            "Oil (2 tbsp)",
-            "Water (¾ cup)"
-          ]
-        },
-        {
-          "name": "Choppy bit",
-          "icon": "🔪",
-          "steps": [
-            "Peel and chop potatoes into roughly 3cm chunks — keep them chunky so they don't dissolve",
-            "Dice the onion"
-          ]
-        },
-        {
-          "name": "Fry-y bit",
-          "icon": "🔥",
-          "steps": [
-            "Sauté mode, heat oil",
-            "Add cumin seeds, let them sizzle",
-            "Add onion, cook until golden — about 7 minutes",
-            "Add ginger-garlic paste, fry 1 minute",
-            "Add turmeric, ground cumin, ground coriander, chilli — fry 30 seconds",
-            "Add tomatoes, cook down for 4 minutes until the masala is thick"
-          ]
-        },
-        {
-          "name": "Pressure cook",
-          "icon": "⚡",
-          "steps": [
-            "Add potato chunks and drained chickpeas, stir to coat in the masala",
-            "Add ¾ cup water — not too much, you want a thick gravy not a soup",
-            "Seal lid, pressure cook HIGH 8 minutes",
-            "Natural release 5 minutes, then quick release"
-          ]
-        },
-        {
-          "name": "Post pressure cook",
-          "icon": "✨",
-          "steps": [
-            "Stir gently — potatoes should be perfectly tender but still holding shape",
-            "Add garam masala and amchur, stir through",
-            "Mash one or two potato pieces slightly to thicken the gravy if needed",
-            "Taste for salt and tang — add more amchur if it needs a lift",
-            "Top with fresh coriander and a squeeze of lemon"
-          ]
-        }
-      ],
-      "notes": [
-        "Amchur is the secret weapon here — it gives that classic chole tang without tamarind",
-        "Great stuffed into a wrap with some yoghurt and chutney",
-        "Waxy potatoes hold their shape better than floury ones under pressure"
       ]
     }
   ]
