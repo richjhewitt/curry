@@ -3,6 +3,7 @@
     {
       "name": "Curried Pasta",
       "base": "Pressure cooker curry + pasta method",
+      "cook_time": "5 min",
       "ingredients": [
         "Oil",
         "Cumin seeds",

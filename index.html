@@ -1,14 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curry Caravan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
-  <div class="container">
-    <header class="hero">
-      <h1>🌶️ Curry Caravan</h1>
-      <p>Simple, proper curry recipes</p>
-    </header>
 
-    <main>
-      <section id="recipes" class="recipe-list"></section>
-    </main>
-  </div>
+  <div class="grain"></div>
+
+  <header class="hero">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <div class="hero-icon">🚐</div>
+      <h1 class="hero-title">Curry Caravan</h1>
+      <p class="hero-tagline">Pressure cooker recipes from the road</p>
+      <div class="hero-pills">
+        <span class="pill">⚡ Ninja Foodi</span>
+        <span class="pill">🌶️ Pressure Cooker</span>
+        <span class="pill">🥘 Proper Curry</span>
+      </div>
+    </div>
+    <div class="hero-spice-bar" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <main class="main">
+    <p class="recipes-label" id="recipes-count">Loading recipes...</p>
+    <section id="recipes" class="recipe-list" aria-label="Recipe list"></section>
+  </main>
+
+  <footer class="footer">
+    <p>Made from a caravan somewhere. Probably raining.</p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
+</html>
