@@ -1,0 +1,29 @@
+{
+  "recipes": [
+    {
+      "name": "Curried Pasta",
+      "base": "Pressure cooker curry + pasta method",
+      "ingredients": [
+        "Oil",
+        "Cumin seeds",
+        "Onion",
+        "Ginger-garlic paste",
+        "Tinned tomatoes",
+        "Lentils",
+        "Pasta"
+      ],
+      "method": [
+        "Heat oil, add cumin seeds and chillies",
+        "Add onion and cook down",
+        "Add ginger-garlic paste",
+        "Add spices and tomatoes",
+        "Add lentils, pasta, protein, ~2.5 cups water",
+        "Pressure cook 5 min high, 5 min natural release"
+      ],
+      "notes": [
+        "Adjust water depending on protein",
+        "Finish with spinach, lime, coriander"
+      ]
+    }
+  ]
+}
