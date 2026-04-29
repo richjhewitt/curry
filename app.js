@@ -5,21 +5,21 @@
 // Emoji assigned by recipe name keywords — extend as needed
 const RECIPE_EMOJI = {
   pasta:    "🍝",
-  chicken:  "🍗",
-  lamb:     "🥩",
   lentil:   "🫘",
   dal:      "🫘",
   dhal:     "🫘",
   potato:   "🥔",
   aloo:     "🥔",
   paneer:   "🧀",
-  fish:     "🐟",
-  prawn:    "🦐",
+  tofu:     "🍱",
+  spinach:  "🥬",
+  saag:     "🥬",
   rice:     "🍚",
   biryani:  "🍚",
   veg:      "🥦",
-  mushroom: "🍄",
-  egg:      "🥚",
+  chickpea: "🫘",
+  chana:    "🫘",
+  soup:     "🍲",
   default:  "🥘"
 };
 
