@@ -558,8 +558,19 @@ body {
     inset 0 0 0 1px #2d4a2d,
     0 0 6px #5a9e5a22;
 }
+.hero-icon img {
+  margin-bottom: 0.4rem; /* was ~0.6 */
+}
 
-.hero-title img {
+.hero-title {
+  margin-top: 0.1rem;
+}
+.hero-title {
+  text-shadow:
+    0 0 6px #f0a03022,
+    0 0 12px #d4880a22;
+}
+/* .hero-title img {
   width: clamp(140px, 28vw, 320px);
   max-width: 90%;
   height: auto;
@@ -568,4 +579,4 @@ body {
   filter:
     drop-shadow(0 0 6px #f0a03022)
     drop-shadow(0 0 14px #d4880a22);
-}
+} */
