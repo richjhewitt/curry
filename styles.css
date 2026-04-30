@@ -560,11 +560,12 @@ body {
 }
 
 .hero-title img {
-  width: clamp(180px, 60vw, 320px);
+  width: clamp(140px, 28vw, 320px);
+  max-width: 90%;
   height: auto;
   display: block;
   margin: 0 auto;
   filter:
-    drop-shadow(0 0 8px #f0a03022)
-    drop-shadow(0 0 18px #d4880a22);
+    drop-shadow(0 0 6px #f0a03022)
+    drop-shadow(0 0 14px #d4880a22);
 }
