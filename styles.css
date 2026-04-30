@@ -559,7 +559,15 @@ body {
     0 0 6px #5a9e5a22;
 }
 .hero-icon img {
-  margin-bottom: 0.4rem; /* was ~0.6 */
+  width: clamp(80px, 14vw, 130px);
+  height: auto;
+  display: block;
+  margin: 0 auto 0.4rem;
+  animation: float 4s ease-in-out infinite;
+  filter:
+    drop-shadow(0 0 12px #f0a03066)
+    drop-shadow(0 0 26px #d4880a44)
+    drop-shadow(0 0 44px #c84b1822);
 }
 
 .hero-title {
