@@ -25,8 +25,8 @@
       "name": "Curried Pasta",
       "recipes": [
         {
-          "name": "Curried Pasta",
-          "description": "A one-pot wonder — lentils, pasta and a proper curry base all cooked together under pressure. Comfort food from a small kitchen.",
+          "name": "Tadka Dal Pasta",
+          "description": "Like tadka dal but probably offensive to Italians",
           "cook_time": "5 min",
           "tags": ["lentil", "pasta", "one-pot"],
           "stages": [
@@ -35,15 +35,16 @@
               "icon": "🧺",
               "steps": [
                 "Tinned tomatoes (1 can)",
-                "Red lentils (handful)",
-                "Pasta (2 large handfuls)",
+                "Red lentils",
+                "Toor dal",
+                "Pasta (175g)",
                 "Onion (1 medium)",
-                "Ginger-garlic paste (1 tbsp)",
+                "Garlic paste (1 tbsp)",
                 "Cumin seeds (1 tsp)",
                 "Ground coriander (1 tsp)",
                 "Garam masala (½ tsp)",
-                "Turmeric (½ tsp)",
-                "Chilli flakes (to taste)",
+                "Turmeric 1/4 tsp)",
+                "Mirchi/Chilli (1/2 tsp)",
                 "Oil (2 tbsp)",
                 "Water (~2.5 cups)"
               ]
@@ -99,28 +100,107 @@
           ]
         },
         {
-          "name": "Saag Paneer Pasta",
-          "description": "A caravan mashup — the rich spiced spinach base of saag paneer but with pasta cooked right in. Sounds weird, tastes brilliant.",
-          "cook_time": "4 min",
-          "tags": ["paneer", "spinach", "pasta", "saag"],
+          "name": "Chana Masala Pasta",
+          "description": "A one-pot wonder — chickpeas, pasta and a proper curry base all cooked together under pressure. Comfort food from a small kitchen.",
+          "cook_time": "5 min",
+          "tags": ["chickpeas", "pasta", "one-pot"],
           "stages": [
             {
               "name": "Ingredient gathering",
               "icon": "🧺",
               "steps": [
-                "Paneer (200g block)",
-                "Frozen spinach (3 large cubes) or fresh (big handful)",
-                "Pasta (2 large handfuls)",
+                "Tinned tomatoes (1 can)",
+                "Chickpeas (1 can)",
+                "Red lentils (1/4 cup)",
+                "Pasta (175g)",
                 "Onion (1 medium)",
-                "Tinned tomatoes (½ can)",
-                "Ginger-garlic paste (1 tbsp)",
-                "Cumin seeds (1 tsp)",
-                "Turmeric (½ tsp)",
+                "Ginger-garlic paste (2-3 tbsp)",
+                "Cumin seeds (1/2 tsp)",
                 "Ground coriander (1 tsp)",
+                "Mirchi/Chilli powder (1/2 tsp)",
                 "Garam masala (½ tsp)",
-                "Kasuri methi (1 tsp, optional)",
-                "Oil (2 tbsp)",
-                "Water (2 cups)"
+                "Turmeric (1/4 tsp)",
+                "Oil (1 tbsp)",
+                "Water (~2.5 cups)"
+              ]
+            },
+            {
+              "name": "Choppy bit",
+              "icon": "🔪",
+              "steps": [
+                "Dice the onion fairly fine — it'll cook down under pressure so no need to be precious",
+                "If using fresh ginger and garlic, mince or grate them now (or just use paste, no shame)"
+              ]
+            },
+            {
+              "name": "Fry-y bit",
+              "icon": "🔥",
+              "steps": [
+                "Set Foodi to sauté, heat the oil",
+                "Add cumin seeds — wait for them to pop and go fragrant (30 seconds ish)",
+                "Add onion, cook until softened and going golden (5–7 min)",
+                "Add ginger-garlic paste, stir for a minute",
+                "Add turmeric, ground coriander, chilli flakes — stir and let it fry for 30 seconds",
+                "Pour in the tinned tomatoes and stir everything together",
+                "Let the tomato base bubble for 2–3 minutes to cook out the raw taste"
+              ]
+            },
+            {
+              "name": "Pressure cook",
+              "icon": "⚡",
+              "steps": [
+                "Add chickpeas, red lentils and pasta into the pot",
+                "Pour in ~2.5 cups of water — enough to just cover everything",
+                "Give it a good stir, make sure nothing is stuck to the bottom",
+                "Seal the lid, set to pressure cook HIGH for 5 minutes",
+                "Natural release for 5 minutes, then quick release the rest"
+              ]
+            },
+            {
+              "name": "Post pressure cook",
+              "icon": "✨",
+              "steps": [
+                "Stir well — it'll look thick and glossy",
+                "Add garam masala now and stir through",
+                "Taste and adjust salt and chilli",
+                "Wilt in a handful of spinach if you have it",
+                "Finish with a squeeze of lime and fresh coriander"
+              ]
+            }
+          ],
+          "notes": [
+            "The pasta absorbs a lot — if it's too thick just add a splash of hot water and stir",
+            "Red lentils dissolve almost completely and thicken the sauce beautifully",
+            "Works great with chickpeas instead of lentils for a chunkier texture"
+          ]
+        },{
+          "name": "Rajma Masala Pasta",
+          "description": "Curried pasta with kidney beans",
+          "cook_time": "5 min",
+          "tags": ["rajma", "pasta"],
+          "stages": [
+            {
+              "name": "Ingredient gathering",
+              "icon": "🧺",
+              "steps": [
+                "Kindey Beans (1 tin)",
+                "Red lentils (1/4 cup)",
+                "Wholewheat Pasta (175g)",
+                "Onion (1 medium (about half a cup))",
+                "Chopped tomatoes (1 tin)",
+                "Ginger-garlic paste (2-3 tbsp)",
+                "Three finger chillies",
+                "Cumin seeds (1/2 tsp)",
+                "Mirchi/Chilli powder (1/2 tsp)",
+                "Turmeric (1/4 tsp)",
+                "Ground coriander (1/2 tsp)",
+                "Ground cumin (1/2 tsp)",
+                "Garam masala (½ tsp)",
+                "Salt (1/2 tsp)",
+                "Lime",
+                "Fresh coriander",
+                "Oil (1 tbsp)",
+                "Water (2.5 cups)"
               ]
             },
             {
@@ -135,8 +215,8 @@
               "name": "Fry-y bit",
               "icon": "🔥",
               "steps": [
-                "Fry paneer until golden, set aside",
-                "Add cumin seeds",
+                "Heat oil ",
+                "Add chillies and cumin seeds",
                 "Cook onion until soft",
                 "Add ginger-garlic paste",
                 "Add spices",
@@ -193,7 +273,7 @@
           "notes": []
         },
         {
-          "name": "Cacio e Pepe (Indalian?)",
+          "name": "Cacio e Pepe",
           "description": "Cheese, pepper… and potential madness.",
           "cook_time": "7 min",
           "tags": ["pasta", "cheese"],
