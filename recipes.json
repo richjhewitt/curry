@@ -1,6 +1,27 @@
 {
   "categories": [
     {
+      "name": "Curry",
+      "recipes": [
+        {
+          "name": "Chana Dal",
+          "description": "Split yellow peas cooked low and slow into a thick, deeply spiced dal.",
+          "cook_time": "15 min",
+          "tags": ["lentil", "dal", "veg"],
+          "stages": [],
+          "notes": []
+        },
+        {
+          "name": "Aloo Chana",
+          "description": "Potatoes and chickpeas in a thick, tangy tomato masala.",
+          "cook_time": "8 min",
+          "tags": ["potato", "chickpea", "veg"],
+          "stages": [],
+          "notes": []
+        }
+      ]
+    },
+    {
       "name": "Curried Pasta",
       "recipes": [
         {
@@ -149,27 +170,6 @@
             "Kasuri methi gives restaurant flavour",
             "Add water if too thick"
           ]
-        }
-      ]
-    },
-    {
-      "name": "Curry",
-      "recipes": [
-        {
-          "name": "Chana Dal",
-          "description": "Split yellow peas cooked low and slow into a thick, deeply spiced dal.",
-          "cook_time": "15 min",
-          "tags": ["lentil", "dal", "veg"],
-          "stages": [],
-          "notes": []
-        },
-        {
-          "name": "Aloo Chana",
-          "description": "Potatoes and chickpeas in a thick, tangy tomato masala.",
-          "cook_time": "8 min",
-          "tags": ["potato", "chickpea", "veg"],
-          "stages": [],
-          "notes": []
         }
       ]
     },
