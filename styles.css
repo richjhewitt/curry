@@ -558,3 +558,13 @@ body {
     inset 0 0 0 1px #2d4a2d,
     0 0 6px #5a9e5a22;
 }
+
+.hero-title img {
+  width: clamp(180px, 60vw, 320px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  filter:
+    drop-shadow(0 0 8px #f0a03022)
+    drop-shadow(0 0 18px #d4880a22);
+}
