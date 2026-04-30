@@ -35,17 +35,22 @@
               "icon": "🧺",
               "steps": [
                 "Tinned tomatoes (1 can)",
-                "Red lentils",
-                "Toor dal",
+                "Red lentils (heaped 1/4 cup)",
+                "Toor dal (heaped 1/4 cup)",
                 "Pasta (175g)",
                 "Onion (1 medium)",
-                "Garlic paste (1 tbsp)",
-                "Cumin seeds (1 tsp)",
-                "Ground coriander (1 tsp)",
+                "Cumin seeds (1/2 tsp)",
+                "Black Mustard Seeds - 1/2 tsp",
+                "Garlic - 7- 8 cloves (3-5 if you're not as big a fan of garlic as me!) or paste (2 tbsp)",
+                "Asafoetida/Hing Powder - 1/8 tsp",
+                "1 Dried Red Chilli",
+                "Curry Leaves",
+                "Ground coriander (1/2 tsp)",
                 "Garam masala (½ tsp)",
                 "Turmeric 1/4 tsp)",
                 "Mirchi/Chilli (1/2 tsp)",
-                "Oil (2 tbsp)",
+                "Salt (1/2 tsp)",
+                "Oil (1 tbsp)",
                 "Water (~2.5 cups)"
               ]
             },
@@ -101,7 +106,7 @@
         },
         {
           "name": "Chana Masala Pasta",
-          "description": "A one-pot wonder — chickpeas, pasta and a proper curry base all cooked together under pressure. Comfort food from a small kitchen.",
+          "description": "",
           "cook_time": "5 min",
           "tags": ["chickpeas", "pasta", "one-pot"],
           "stages": [
@@ -120,6 +125,8 @@
                 "Mirchi/Chilli powder (1/2 tsp)",
                 "Garam masala (½ tsp)",
                 "Turmeric (1/4 tsp)",
+                "Amchur dried mango powder (1/2 tsp)",
+                "Salt (1/2 tsp)",
                 "Oil (1 tbsp)",
                 "Water (~2.5 cups)"
               ]
@@ -220,18 +227,17 @@
                 "Cook onion until soft",
                 "Add ginger-garlic paste",
                 "Add spices",
-                "Add tomatoes",
-                "Add spinach and cook down"
+                "Add tomatoes"
               ]
             },
             {
               "name": "Pressure cook",
               "icon": "⚡",
               "steps": [
-                "Add pasta and water",
-                "Add paneer back in",
-                "Pressure cook HIGH 4 min",
-                "Quick release"
+                "Add pasta, kidney beans, lentils and water",
+                "Stir well",
+                "Pressure cook HIGH 5 min",
+                "5 min naural release, then quick release remaining"
               ]
             },
             {
@@ -239,9 +245,9 @@
               "icon": "✨",
               "steps": [
                 "Stir gently",
-                "Add garam masala + kasuri methi",
+                "Add lime juice and fresh coriander",
                 "Adjust seasoning",
-                "Optional yoghurt/cream"
+                ""
               ]
             }
           ],
