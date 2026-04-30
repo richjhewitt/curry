@@ -479,3 +479,82 @@ body {
 .category.open .category-list {
   display: flex;
 }
+
+/* ─────────────────────────────────────────
+   CURRY CARAVAN — unified glow system
+───────────────────────────────────────── */
+
+/* LOGO IMAGE (replaces emoji glow) */
+.hero-icon img {
+  width: clamp(60px, 10vw, 90px);
+  height: auto;
+  display: block;
+  margin: 0 auto 0.6rem;
+  animation: float 4s ease-in-out infinite;
+  filter:
+    drop-shadow(0 0 10px #f0a03066)
+    drop-shadow(0 0 22px #d4880a44)
+    drop-shadow(0 0 36px #c84b1822);
+}
+
+/* HERO TITLE — warmer, slightly glowing */
+.hero-title {
+  position: relative;
+  text-shadow:
+    0 0 8px #f0a03022,
+    0 0 18px #d4880a22;
+}
+
+/* SOFT AMBIENT GLOW BEHIND HERO */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: -40px -20px -20px -20px;
+  background: radial-gradient(
+    circle at center,
+    rgba(240,160,48,0.08) 0%,
+    rgba(212,136,10,0.05) 35%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* make sure content sits above glow */
+.hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* RECIPE CARD HOVER — subtle warmth instead of flat */
+.recipe:hover {
+  border-color: #7a3e0e66;
+  box-shadow:
+    0 0 0 1px #7a3e0e33,
+    0 6px 18px #00000055,
+    0 0 12px #d4880a11;
+}
+
+/* CATEGORY HEADERS — faint highlight on hover */
+.category-header:hover {
+  color: #c89a5a;
+  text-shadow: 0 0 6px #d4880a22;
+}
+
+/* TAGS — tiny warmth so they don’t feel dead */
+.tag {
+  transition: all 0.15s ease;
+}
+
+.tag:hover {
+  border-color: #d4880a55;
+  color: #c89a5a;
+  box-shadow: 0 0 6px #d4880a22;
+}
+
+/* NINJA BADGE — gentle green glow */
+.ninja-badge {
+  box-shadow:
+    inset 0 0 0 1px #2d4a2d,
+    0 0 6px #5a9e5a22;
+}
