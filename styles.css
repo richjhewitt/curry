@@ -4,40 +4,39 @@
 ───────────────────────────────────────── */
 
 :root {
-  --bg-base:        #130f08;
-  --bg-card:        #1c1610;
-  --bg-card-hover:  #211a12;
-  --bg-inset:       #251d12;
-  --bg-note:        #2a1f0f;
+  --bg-base:            #130f08;
+  --bg-card:            #1c1610;
+  --bg-card-hover:      #211a12;
+  --bg-inset:           #251d12;
+  --bg-note:            #2a1f0f;
 
-  --border-subtle:  #2e2416;
-  --border-mid:     #3d2f1a;
-  --border-accent:  #b5620e;
+  --border-subtle:      #2e2416;
+  --border-mid:         #3d2f1a;
+  --border-accent:      #b5620e;
 
-  --text-primary:   #f0e6d3;
-  --text-secondary: #9e8a72;
-  --text-muted:     #5a4a38;
+  --text-primary:       #f0e6d3;
+  --text-secondary:     #9e8a72;
+  --text-muted:         #5a4a38;
 
-  --spice-amber:    #f0a030;
-  --spice-turmeric: #d4880a;
-  --spice-chilli:   #c84b18;
-  --spice-green:    #5a9e5a;
-  --spice-green-bg: #1a2a1a;
+  --spice-amber:        #f0a030;
+  --spice-turmeric:     #d4880a;
+  --spice-chilli:       #c84b18;
+  --spice-green:        #5a9e5a;
+  --spice-green-bg:     #1a2a1a;
   --spice-green-border: #2d4a2d;
 
-  --radius-card:    14px;
-  --radius-pill:    20px;
-  --radius-sm:      8px;
+  --radius-card:        14px;
+  --radius-pill:        20px;
+  --radius-sm:          8px;
 
-  --font-display:   'Playfair Display', Georgia, serif;
-  --font-body:      'DM Sans', system-ui, sans-serif;
+  --font-display:       'Playfair Display', Georgia, serif;
+  --font-body:          'DM Sans', system-ui, sans-serif;
 
-  --transition:     0.18s ease;
+  --transition:         0.18s ease;
 }
 
 /* ── RESET ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 html { scroll-behavior: smooth; }
 
 body {
@@ -69,6 +68,7 @@ body {
   border-bottom: 1px solid var(--border-mid);
 }
 
+/* dot-grid background pattern */
 .hero-pattern {
   position: absolute;
   inset: 0;
@@ -79,18 +79,38 @@ body {
   background-position: 0 0, 8px 8px;
 }
 
-/* warm glow behind the icon */
-.hero-inner {
-  position: relative;
-  padding: 3rem 2rem 2rem;
+/* ambient radial glow behind everything */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: -40px -20px -20px -20px;
+  background: radial-gradient(
+    circle at center,
+    rgba(240,160,48,0.08) 0%,
+    rgba(212,136,10,0.05) 35%,
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: 0;
 }
 
-.hero-icon {
-  font-size: 3.2rem;
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem 2rem 1.5rem;
+}
+
+/* ── HERO LOGO ── */
+.hero-icon img {
+  width: clamp(140px, 22vw, 230px);
+  height: auto;
   display: block;
-  margin-bottom: 0.6rem;
-  filter: drop-shadow(0 0 18px #d4880a55);
+  margin: 0 auto 0rem;
   animation: float 4s ease-in-out infinite;
+  filter:
+    drop-shadow(0 0 12px #f0a03055)
+    drop-shadow(0 0 24px #d4880a33)
+    drop-shadow(0 0 40px #c84b181a);
 }
 
 @keyframes float {
@@ -98,17 +118,20 @@ body {
   50%       { transform: translateY(-6px); }
 }
 
+/* ── HERO TITLE ── */
 .hero-title {
   font-family: var(--font-display);
   font-size: clamp(2.2rem, 6vw, 3.4rem);
   font-weight: 700;
   letter-spacing: -0.5px;
+  line-height: 1.1;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
   background: linear-gradient(135deg, #f4a93b 0%, #e0651a 50%, #f0a030 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 1.1;
-  margin-bottom: 0.5rem;
+  text-shadow: none; /* can't combine text-shadow with background-clip */
 }
 
 .hero-tagline {
@@ -138,14 +161,12 @@ body {
   letter-spacing: 0.04em;
 }
 
-/* spice stripe bar at bottom of hero */
+/* spice-colour stripe bar at base of hero */
 .hero-spice-bar {
   display: flex;
   height: 3px;
 }
-.hero-spice-bar span {
-  flex: 1;
-}
+.hero-spice-bar span { flex: 1; }
 .hero-spice-bar span:nth-child(1)  { background: #e8622a; }
 .hero-spice-bar span:nth-child(2)  { background: #d4880a; }
 .hero-spice-bar span:nth-child(3)  { background: #f0a030; }
@@ -179,6 +200,47 @@ body {
   gap: 12px;
 }
 
+/* ── CATEGORY SECTIONS ── */
+.category {
+  margin-bottom: 1rem;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem 0.4rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color var(--transition);
+}
+
+.category-header:hover {
+  color: #c89a5a;
+}
+
+.category-chevron {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.category.open .category-chevron {
+  transform: rotate(180deg);
+}
+
+.category-list {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.category.open .category-list {
+  display: flex;
+}
+
 /* ── RECIPE CARD ── */
 .recipe {
   background: var(--bg-card);
@@ -186,12 +248,16 @@ body {
   border-radius: var(--radius-card);
   overflow: hidden;
   cursor: pointer;
-  transition: border-color var(--transition), background var(--transition);
+  transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
 }
 
 .recipe:hover {
-  border-color: var(--border-mid);
+  border-color: #7a3e0e66;
   background: var(--bg-card-hover);
+  box-shadow:
+    0 0 0 1px #7a3e0e33,
+    0 6px 18px #00000055,
+    0 0 12px #d4880a11;
 }
 
 .recipe.open {
@@ -235,12 +301,35 @@ body {
   text-overflow: ellipsis;
 }
 
-.recipe-base {
+.recipe-desc {
   font-size: 0.78rem;
   color: var(--text-secondary);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.5;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.recipe-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.tag {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  font-size: 0.65rem;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+  transition: all 0.15s ease;
+}
+
+.tag:hover {
+  border-color: #d4880a55;
+  color: #c89a5a;
 }
 
 .recipe-right {
@@ -261,6 +350,7 @@ body {
   border-radius: var(--radius-pill);
   white-space: nowrap;
   letter-spacing: 0.03em;
+  box-shadow: 0 0 6px #5a9e5a22;
 }
 
 .recipe-chevron {
@@ -273,33 +363,6 @@ body {
 .recipe.open .recipe-chevron {
   transform: rotate(180deg);
 }
-
-/* ── CARD META EXTRAS ── */
-.recipe-desc {
-  font-size: 0.78rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  margin-top: 2px;
-  margin-bottom: 5px;
-}
-
-.recipe-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 4px;
-}
-
-.tag {
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
-  font-size: 0.65rem;
-  padding: 2px 7px;
-  border-radius: var(--radius-pill);
-  letter-spacing: 0.04em;
-}
-
 
 /* ── EXPANDED DETAILS ── */
 .recipe-details {
@@ -322,7 +385,6 @@ body {
 .stages {
   display: flex;
   flex-direction: column;
-  gap: 0;
   margin-top: 1rem;
 }
 
@@ -393,7 +455,7 @@ body {
   margin-top: 3px;
 }
 
-/* ingredient gathering — unordered, dimmer colour */
+/* ingredient gathering — unordered list, dimmer */
 .stage:first-child .stage-steps {
   color: var(--text-secondary);
   list-style: none;
@@ -407,7 +469,7 @@ body {
   font-size: 0.8rem;
 }
 
-/* notes box */
+/* ── NOTES BOX ── */
 .recipe-notes {
   background: var(--bg-note);
   border: 1px solid var(--border-mid);
@@ -443,148 +505,3 @@ body {
   font-style: italic;
   font-family: var(--font-display);
 }
-/* ── CATEGORY SECTIONS ── */
-
-.category {
-  margin-bottom: 1rem;
-}
-
-.category-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.6rem 0.4rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  cursor: pointer;
-}
-
-.category-chevron {
-  font-size: 0.7rem;
-  transition: transform 0.2s ease;
-}
-
-.category.open .category-chevron {
-  transform: rotate(180deg);
-}
-
-.category-list {
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.category.open .category-list {
-  display: flex;
-}
-
-/* ─────────────────────────────────────────
-   CURRY CARAVAN — unified glow system
-───────────────────────────────────────── */
-
-/* LOGO IMAGE (replaces emoji glow) */
-.hero-icon img {
-  width: clamp(60px, 10vw, 90px);
-  height: auto;
-  display: block;
-  margin: 0 auto 0.6rem;
-  animation: float 4s ease-in-out infinite;
-  filter:
-    drop-shadow(0 0 10px #f0a03066)
-    drop-shadow(0 0 22px #d4880a44)
-    drop-shadow(0 0 36px #c84b1822);
-}
-
-/* HERO TITLE — warmer, slightly glowing */
-.hero-title {
-  position: relative;
-  text-shadow:
-    0 0 8px #f0a03022,
-    0 0 18px #d4880a22;
-}
-
-/* SOFT AMBIENT GLOW BEHIND HERO */
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: -40px -20px -20px -20px;
-  background: radial-gradient(
-    circle at center,
-    rgba(240,160,48,0.08) 0%,
-    rgba(212,136,10,0.05) 35%,
-    transparent 70%
-  );
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* make sure content sits above glow */
-.hero-inner {
-  position: relative;
-  z-index: 1;
-}
-
-/* RECIPE CARD HOVER — subtle warmth instead of flat */
-.recipe:hover {
-  border-color: #7a3e0e66;
-  box-shadow:
-    0 0 0 1px #7a3e0e33,
-    0 6px 18px #00000055,
-    0 0 12px #d4880a11;
-}
-
-/* CATEGORY HEADERS — faint highlight on hover */
-.category-header:hover {
-  color: #c89a5a;
-  text-shadow: 0 0 6px #d4880a22;
-}
-
-/* TAGS — tiny warmth so they don’t feel dead */
-.tag {
-  transition: all 0.15s ease;
-}
-
-.tag:hover {
-  border-color: #d4880a55;
-  color: #c89a5a;
-  box-shadow: 0 0 6px #d4880a22;
-}
-
-/* NINJA BADGE — gentle green glow */
-.ninja-badge {
-  box-shadow:
-    inset 0 0 0 1px #2d4a2d,
-    0 0 6px #5a9e5a22;
-}
-.hero-icon img {
-  width: clamp(95px, 16vw, 160px);
-  height: auto;
-  display: block;
-  margin: 0 auto 0.4rem;
-  animation: float 4s ease-in-out infinite;
-  filter:
-    drop-shadow(0 0 14px #f0a03066)
-    drop-shadow(0 0 30px #d4880a44)
-    drop-shadow(0 0 50px #c84b1822);
-}
-
-.hero-title {
-  margin-top: 0.1rem;
-}
-.hero-title {
-  text-shadow:
-    0 0 6px #f0a03022,
-    0 0 12px #d4880a22;
-}
-/* .hero-title img {
-  width: clamp(140px, 28vw, 320px);
-  max-width: 90%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  filter:
-    drop-shadow(0 0 6px #f0a03022)
-    drop-shadow(0 0 14px #d4880a22);
-} */
