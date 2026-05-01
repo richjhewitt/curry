@@ -159,29 +159,28 @@
               "name": "Choppy bit",
               "icon": "🔪",
               "steps": [
-                "Dice the onion fairly fine — it'll cook down under pressure so no need to be precious",
-                "If using fresh ginger and garlic, mince or grate them now (or just use paste, no shame)"
+                "Fine dice onions, tomato if not using tins and finely chop chillies.",
+                "If using fresh ginger and garlic, mince or grate them now (or just use paste)",
+                "Rinse chickpeas and lentils until the water runs clear."
               ]
             },
             {
               "name": "Fry-y bit",
               "icon": "🔥",
               "steps": [
-                "Set Foodi to sauté, heat the oil",
-                "Add cumin seeds — wait for them to pop and go fragrant (30 seconds ish)",
-                "Add onion, cook until softened and going golden (5–7 min)",
-                "Add ginger-garlic paste, stir for a minute",
-                "Add turmeric, ground coriander, chilli flakes — stir and let it fry for 30 seconds",
-                "Pour in the tinned tomatoes and stir everything together",
-                "Let the tomato base bubble for 2–3 minutes to cook out the raw taste"
+                "Pressure cooker to saute mode on high heat, wait till hot, add oil.",
+                "When oil is hot add cumin seeds and green chillies.. When cumin seeds change colour/splutter",
+                "Add onions, ginger and garlic, stir and saute.",
+                "When onions have turned light pink/brown (about 3 mins) add tomatoes, and fry-y spices.",
+                "Stir and saute everything for a further couple of minutes.",
+                "Add rinsed chickpeas, lentils, dried mango powder and a cup of water... Stir well and deglaze if necessary",
+                "Add pasta and remaining 1.5 cups of water"
               ]
             },
             {
               "name": "Pressure cook",
               "icon": "⚡",
               "steps": [
-                "Add chickpeas, red lentils and pasta into the pot",
-                "Pour in ~2.5 cups of water",
                 "Give it a good stir, make sure nothing is stuck to the bottom",
                 "Seal the lid, set to pressure cook HIGH for 5 minutes",
                 "Natural release for 5 minutes, then quick release the rest"
@@ -192,17 +191,13 @@
               "icon": "✨",
               "steps": [
                 "Stir well — it'll look thick and glossy",
-                "Add garam masala now and stir through",
-                "Taste and adjust salt and chilli",
-                "Wilt in a handful of spinach if you have it",
-                "Finish with a squeeze of lime and fresh coriander"
+                "Finish with fresh coriander"
               ]
             }
           ],
           "notes": [
-            "The pasta absorbs a lot — if it's too thick just add a splash of hot water and stir",
-            "Red lentils dissolve almost completely and thicken the sauce beautifully",
-            "Works great with chickpeas instead of lentils for a chunkier texture"
+            "Add spinach or kale after pressure cooking... spinach wilts instantly.. kale stir in and put the lid on for 5 minutes to steam",
+            "Red lentils dissolve almost completely and thicken the sauce beautifully"
           ]
         },
         {
