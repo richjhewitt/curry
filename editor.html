@@ -251,6 +251,12 @@
     let allRecipes   = [];  // flat list for editing
     let originalData = null; // preserve original structure for download
 
+    // Basic access check — not real security, just keeps randos out
+    const password = prompt("Password:");
+    if (password !== "yourpassword") {
+      document.body.innerHTML = "<p style='color:#5a4a38;font-family:sans-serif;padding:2rem;'>Nope.</p>";
+    }
+
     // ── LOAD ──────────────────────────────
     fetch("recipes.json?v=" + Date.now())
       .then(r => {
