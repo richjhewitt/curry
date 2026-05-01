@@ -4,20 +4,35 @@
       "name": "Curry",
       "recipes": [
         {
-          "name": "Chana Dal",
-          "description": "Split yellow peas cooked low and slow into a thick, deeply spiced dal.",
-          "cook_time": "15 min",
-          "tags": ["lentil", "dal", "veg"],
+          "name": "Creamy Coconut Chana Masala",
+          "description": "Creamy chickpea curry with coconut milk",
+          "cook_time": "5 min",
+          "tags": [
+            "chana",
+            "chickpeas",
+            "coconut"
+          ],
           "stages": [],
           "notes": []
         },
         {
-          "name": "Aloo Chana",
-          "description": "Potatoes and chickpeas in a thick, tangy tomato masala.",
-          "cook_time": "8 min",
-          "tags": ["potato", "chickpea", "veg"],
+          "name": "Chana Palak",
+          "description": "Spinach and chickpeas in a thick, tangy tomato masala.",
+          "cook_time": "5 min",
+          "tags": [
+            "spinach",
+            "chickpea",
+            "veg"
+          ],
           "stages": [],
           "notes": []
+        },
+        {
+          "name": "Panchmel Dal",
+          "description": "5 types of lentils in a spicey dal",
+          "cook_time": "",
+          "tags": [],
+          "stages": []
         }
       ]
     },
@@ -28,13 +43,18 @@
           "name": "Tadka Dal Pasta",
           "description": "Like tadka dal but probably offensive to Italians",
           "cook_time": "5 min",
-          "tags": ["lentil", "pasta", "one-pot"],
+          "tags": [
+            "lentil",
+            "pasta"
+          ],
           "stages": [
             {
               "name": "Ingredient gathering",
               "icon": "🧺",
               "steps": [
-                "Tinned tomatoes (1 can)",
+                "Oil (1 tbsp)",
+                "Water (~2.5 cups - 3 if using fresh tomato not tinned)",
+                "Tinned tomatoes (1 can) or one large vine tomato (about half a cup)",
                 "Red lentils (heaped 1/4 cup)",
                 "Toor dal (heaped 1/4 cup)",
                 "Pasta (175g)",
@@ -50,29 +70,30 @@
                 "Turmeric 1/4 tsp)",
                 "Mirchi/Chilli (1/2 tsp)",
                 "Salt (1/2 tsp)",
-                "Oil (1 tbsp)",
-                "Water (~2.5 cups)"
+                "Lime",
+                "Fresh coriander"
               ]
             },
             {
               "name": "Choppy bit",
               "icon": "🔪",
               "steps": [
-                "Dice the onion fairly fine — it'll cook down under pressure so no need to be precious",
-                "If using fresh ginger and garlic, mince or grate them now (or just use paste, no shame)"
+                "Rinse both types of lentil until the water runs clear.",
+                "I like to fine dice the onions and tomatoes and finely chop the chillies.",
+                "Peel and mince garlic (or use paste)"
               ]
             },
             {
               "name": "Fry-y bit",
               "icon": "🔥",
               "steps": [
-                "Set Foodi to sauté, heat the oil",
-                "Add cumin seeds — wait for them to pop and go fragrant (30 seconds ish)",
-                "Add onion, cook until softened and going golden (5–7 min)",
-                "Add ginger-garlic paste, stir for a minute",
-                "Add turmeric, ground coriander, chilli flakes — stir and let it fry for 30 seconds",
-                "Pour in the tinned tomatoes and stir everything together",
-                "Let the tomato base bubble for 2–3 minutes to cook out the raw taste"
+                "Pressure cooker to saute mode on high heat, wait till hot, add oil.",
+                "When oil is hot add cumin seeds, chillies, mustard seeds, Asafoetida, dried red chilli, curry leaves and garlic.",
+                "Saute until garlic starts starts to brown, add onions.",
+                "When onions have turned light pink/brown (about 3 mins) add tomatoes, and fry-y spices.",
+                "Combine and saute everything for a further couple of minutes.",
+                "Add rinsed lentils and a cup of water... Stir well and deglaze if necessary",
+                "Add pasta and remaining two cups of water and stir well again."
               ]
             },
             {
@@ -91,7 +112,6 @@
               "icon": "✨",
               "steps": [
                 "Stir well — it'll look thick and glossy",
-                "Add garam masala now and stir through",
                 "Taste and adjust salt and chilli",
                 "Wilt in a handful of spinach if you have it",
                 "Finish with a squeeze of lime and fresh coriander"
@@ -106,15 +126,18 @@
         },
         {
           "name": "Chana Masala Pasta",
-          "description": "",
+          "description": "Curried pasta with chickpeas",
           "cook_time": "5 min",
-          "tags": ["chickpeas", "pasta", "one-pot"],
+          "tags": [
+            "chickpeas",
+            "pasta"
+          ],
           "stages": [
             {
               "name": "Ingredient gathering",
               "icon": "🧺",
               "steps": [
-                "Tinned tomatoes (1 can)",
+                "Tinned tomatoes (1 can) or one large vine tomato (about half a cup)",
                 "Chickpeas (1 can)",
                 "Red lentils (1/4 cup)",
                 "Pasta (175g)",
@@ -127,8 +150,9 @@
                 "Turmeric (1/4 tsp)",
                 "Amchur dried mango powder (1/2 tsp)",
                 "Salt (1/2 tsp)",
-                "Oil (1 tbsp)",
-                "Water (~2.5 cups)"
+                "Olive Oil (1 tbsp)",
+                "Water (2.5 cups - 3 if you use fresh tomato)",
+                "Fresh coriander"
               ]
             },
             {
@@ -157,7 +181,7 @@
               "icon": "⚡",
               "steps": [
                 "Add chickpeas, red lentils and pasta into the pot",
-                "Pour in ~2.5 cups of water — enough to just cover everything",
+                "Pour in ~2.5 cups of water",
                 "Give it a good stir, make sure nothing is stuck to the bottom",
                 "Seal the lid, set to pressure cook HIGH for 5 minutes",
                 "Natural release for 5 minutes, then quick release the rest"
@@ -180,11 +204,15 @@
             "Red lentils dissolve almost completely and thicken the sauce beautifully",
             "Works great with chickpeas instead of lentils for a chunkier texture"
           ]
-        },{
+        },
+        {
           "name": "Rajma Masala Pasta",
           "description": "Curried pasta with kidney beans",
           "cook_time": "5 min",
-          "tags": ["rajma", "pasta"],
+          "tags": [
+            "rajma",
+            "pasta"
+          ],
           "stages": [
             {
               "name": "Ingredient gathering",
@@ -214,7 +242,7 @@
               "name": "Choppy bit",
               "icon": "🔪",
               "steps": [
-                "Cut paneer into cubes",
+                "Finely chop chillies",
                 "Dice the onion"
               ]
             },
@@ -266,7 +294,10 @@
           "name": "Pasta Arrabiata",
           "description": "Classic spicy tomato pasta — ready for crossover chaos.",
           "cook_time": "10 min",
-          "tags": ["pasta", "spicy"],
+          "tags": [
+            "pasta",
+            "spicy"
+          ],
           "stages": [],
           "notes": []
         },
@@ -274,7 +305,10 @@
           "name": "Aglio e Olio e Pepperoncino",
           "description": "Garlic, oil, chilli — minimal, aggressive, perfect.",
           "cook_time": "8 min",
-          "tags": ["pasta", "garlic"],
+          "tags": [
+            "pasta",
+            "garlic"
+          ],
           "stages": [],
           "notes": []
         },
@@ -282,7 +316,10 @@
           "name": "Cacio e Pepe",
           "description": "Cheese, pepper… and potential madness.",
           "cook_time": "7 min",
-          "tags": ["pasta", "cheese"],
+          "tags": [
+            "pasta",
+            "cheese"
+          ],
           "stages": [],
           "notes": []
         }
