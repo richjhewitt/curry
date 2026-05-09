@@ -232,46 +232,43 @@
               "icon": "🔪",
               "steps": [
                 "Finely chop chillies",
-                "Dice the onion"
+                "Fine dice the onion",
+                "Rinse lentils till water runs clear and kidney beans"
               ]
             },
             {
               "name": "Fry-y bit",
               "icon": "🔥",
               "steps": [
-                "Heat oil ",
-                "Add chillies and cumin seeds",
-                "Cook onion until soft",
-                "Add ginger-garlic paste",
-                "Add spices",
-                "Add tomatoes"
+                "Pressure cooker on high in saute mode, preheat oil.",
+                "Add chillies and cumin seeds and let bloom for 30-40 seconds",
+                "Add onion and cook for about 2-3 mins",
+                "Add ginger-garlic paste and cook for another minute or so.",
+                "Add tomatoes and spices and cook for another couple of minutes."
               ]
             },
             {
               "name": "Pressure cook",
               "icon": "⚡",
               "steps": [
-                "Add pasta, kidney beans, lentils and water",
-                "Stir well",
-                "Pressure cook HIGH 5 min",
-                "5 min naural release, then quick release remaining"
+                "Add kidney beans, lentils and one cup of water and stir well.",
+                "Add pasta and remaining 1.5 cups of water and stir well again.",
+                "Pressure cook on HIGH for 5 min"
               ]
             },
             {
-              "name": "Finish",
+              "name": "Post pressure cook",
               "icon": "✨",
               "steps": [
-                "Stir gently",
-                "Add lime juice and fresh coriander",
-                "Adjust seasoning",
-                ""
+                "5 mins natural release then quick release the remaining pressure.",
+                "Stir well, add lime juice and stir again.",
+                "Chop coriander. add some and stir, keep some for garnish when serving."
               ]
             }
           ],
           "notes": [
-            "Frozen spinach works great",
-            "Kasuri methi gives restaurant flavour",
-            "Add water if too thick"
+            "Add spinach or kale after pressure cooking too if you have it",
+            "If you use plain pasta instead of wholewheat or prefer it al dente, you may prefer to only pressure cook for 4 minutes."
           ]
         }
       ]
