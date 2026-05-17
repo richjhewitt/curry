@@ -13,6 +13,7 @@ const RECIPE_EMOJI = {
   tofu:     "🍱",
   spinach:  "🥬",
   saag:     "🥬",
+  palak:    "🥬",
   rice:     "🍚",
   biryani:  "🍚",
   veg:      "🥦",
@@ -28,6 +29,18 @@ function getEmoji(name) {
     if (key !== "default" && lower.includes(key)) return emoji;
   }
   return RECIPE_EMOJI.default;
+}
+
+function slugify(value) {
+  return value
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function getRecipeId(recipe) {
+  return recipe.id || slugify(recipe.name);
 }
 
 function buildStagesHTML(stages) {
@@ -49,9 +62,10 @@ function buildStagesHTML(stages) {
   }).join("");
 }
 
-function buildCard(recipe) {
+function buildCard(recipe, onToggle) {
   const card = document.createElement("div");
   card.className = "recipe";
+  card.id = getRecipeId(recipe);
 
   const emoji = recipe.emoji || getEmoji(recipe.name);
 
@@ -86,6 +100,7 @@ function buildCard(recipe) {
 
   card.addEventListener("click", () => {
     card.classList.toggle("open");
+    onToggle?.(card, recipe);
   });
 
   return card;
@@ -97,15 +112,38 @@ fetch("recipes.json")
   .then(data => {
     const container = document.getElementById("recipes");
     const countEl   = document.getElementById("recipes-count");
+    const recipeCards = new Map();
 
     const categories = data.categories || [];
     let total = 0;
+
+    const getHashId = () => decodeURIComponent(window.location.hash.slice(1));
+
+    function openRecipeFromHash(scroll = false) {
+      const recipeId = getHashId();
+      const match = recipeCards.get(recipeId);
+
+      if (!match) return false;
+
+      match.category.classList.add("open");
+      match.card.classList.add("open");
+
+      if (scroll) {
+        match.card.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+
+      return true;
+    }
+
+    function clearHash() {
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
 
     categories.forEach((category, index) => {
       const wrapper = document.createElement("div");
       wrapper.className = "category";
 
-      if (index === 0) wrapper.classList.add("open");
+      if (index === 0 && !getHashId()) wrapper.classList.add("open");
 
       const header = document.createElement("div");
       header.className = "category-header";
@@ -119,7 +157,17 @@ fetch("recipes.json")
 
       (category.recipes || []).forEach(recipe => {
         total++;
-        list.appendChild(buildCard(recipe));
+        const recipeId = getRecipeId(recipe);
+        const card = buildCard(recipe, (openedCard) => {
+          if (openedCard.classList.contains("open")) {
+            history.replaceState(null, "", `#${recipeId}`);
+          } else if (getHashId() === recipeId) {
+            clearHash();
+          }
+        });
+
+        recipeCards.set(recipeId, { card, category: wrapper });
+        list.appendChild(card);
       });
 
       header.addEventListener("click", () => {
@@ -132,4 +180,8 @@ fetch("recipes.json")
     });
 
     countEl.textContent = `${total} recipe${total !== 1 ? "s" : ""}`;
+    if (getHashId() && !openRecipeFromHash(true)) {
+      container.querySelector(".category")?.classList.add("open");
+    }
+    window.addEventListener("hashchange", () => openRecipeFromHash(true));
   });

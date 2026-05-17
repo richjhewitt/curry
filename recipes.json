@@ -4,6 +4,7 @@
       "name": "Curry",
       "recipes": [
         {
+          "id": "creamy-coconut-chana-masala",
           "name": "Creamy Coconut Chana Masala",
           "description": "Creamy chickpea curry with coconut milk",
           "cook_time": "5 min",
@@ -16,6 +17,7 @@
           "notes": []
         },
         {
+          "id": "chana-palak",
           "name": "Chana Palak",
           "description": "Spinach and chickpeas in a thick, tangy tomato masala.",
           "cook_time": "5 min",
@@ -28,6 +30,7 @@
           "notes": []
         },
         {
+          "id": "panchmel-dal",
           "name": "Panchmel Dal",
           "description": "5 types of lentils in a spicey dal",
           "cook_time": "",
@@ -40,6 +43,7 @@
       "name": "Curried Pasta",
       "recipes": [
         {
+          "id": "tadka-dal-pasta",
           "name": "Tadka Dal Pasta",
           "description": "Like tadka dal but probably offensive to Italians",
           "cook_time": "5 min",
@@ -119,6 +123,7 @@
           ]
         },
         {
+          "id": "chana-masala-pasta",
           "name": "Chana Masala Pasta",
           "description": "Curried pasta with chickpeas",
           "cook_time": "5 min",
@@ -136,13 +141,14 @@
                 "Red lentils (1/4 cup)",
                 "Pasta (175g)",
                 "Onion (1 medium)",
+                "Finger chillies (3-4)",
                 "Ginger-garlic paste (2-3 tbsp)",
                 "Cumin seeds (1/2 tsp)",
                 "Ground coriander (1 tsp)",
                 "Mirchi/Chilli powder (1/2 tsp)",
                 "Garam masala (½ tsp)",
                 "Turmeric (1/4 tsp)",
-                "Amchur dried mango powder (1/2 tsp)",
+                "Amchur dried mango powder (1/2 tsp) - use lime juice after pressure cooking instead if you don't have this",
                 "Salt (1/2 tsp)",
                 "Olive Oil (1 tbsp)",
                 "Water (2.5 cups - 3 if you use fresh tomato)",
@@ -165,7 +171,7 @@
                 "Pressure cooker to saute mode on high heat, wait till hot, add oil.",
                 "When oil is hot add cumin seeds and green chillies.. When cumin seeds change colour/splutter",
                 "Add onions, ginger and garlic, stir and saute.",
-                "When onions have turned light pink/brown (about 3 mins) add tomatoes, and fry-y spices.",
+                "After about 3 mins add tomatoes and spices.",
                 "Stir and saute everything for a further couple of minutes.",
                 "Add rinsed chickpeas, lentils, dried mango powder and a cup of water... Stir well and deglaze if necessary",
                 "Add pasta and remaining 1.5 cups of water"
@@ -195,6 +201,7 @@
           ]
         },
         {
+          "id": "rajma-masala-pasta",
           "name": "Rajma Masala Pasta",
           "description": "Curried pasta with kidney beans",
           "cook_time": "5 min",
@@ -277,6 +284,7 @@
       "name": "Indalian",
       "recipes": [
         {
+          "id": "pasta-arrabiata",
           "name": "Pasta Arrabiata",
           "description": "Classic spicy tomato pasta — ready for crossover chaos.",
           "cook_time": "10 min",
@@ -288,6 +296,7 @@
           "notes": []
         },
         {
+          "id": "aglio-e-olio-e-pepperoncino",
           "name": "Aglio e Olio e Pepperoncino",
           "description": "Garlic, oil, chilli — minimal, aggressive, perfect.",
           "cook_time": "8 min",
@@ -299,6 +308,7 @@
           "notes": []
         },
         {
+          "id": "cacio-e-pepe",
           "name": "Cacio e Pepe",
           "description": "Cheese, pepper… and potential madness.",
           "cook_time": "7 min",
