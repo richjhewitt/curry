@@ -302,7 +302,7 @@
                 "Tinned tomatoes (1 can)",
                 "Chickpeas (1 can)",
                 "Red lentils (1/4 cup)",
-                "Pasta (175g)",
+                "Wholewheat Pasta (175g)",
                 "Onion (1 medium)",
                 "Red chillies (2)",
                 "Garlic paste (2 tbsp)",
@@ -344,14 +344,14 @@
               "icon": "⚡",
               "steps": [
                 "Give everything a final stir and make sure nothing is stuck to the bottom.",
-                "Seal the lid and pressure cook on HIGH for 5 minutes.",
-                "Quick release immediately once finished."
+                "Seal the lid and pressure cook on HIGH for 5 minutes."
               ]
             },
             {
               "name": "Post pressure cook",
               "icon": "✨",
               "steps": [
+                "Quick release immediately when pressure cooking is finished",
                 "Stir well and allow to rest for a few minutes to thicken.",
                 "Taste and adjust salt, chilli or black pepper if needed.",
                 "Finish with freshly grated parmesan and extra chilli flakes."
@@ -360,13 +360,14 @@
           ],
           "notes": [
             "Made this with frozen cow-friendly meatballs instead of chickpeas.. air fryed for 9 mins at 180, then added when I would have added the chickpeas before pressure cooking",
-            "The short resting period after cooking helps the sauce thicken and cling to the pasta properly."
+            "The short resting period after cooking helps the sauce thicken and cling to the pasta properly.",
+            "If wanting it really al dente or not using wholewheat pasta you might want to try pressure cooking for only 4 minutes"
           ]
         },
         {
           "id": "aglio-olio-e-pepperoncino",
           "name": "Aglio, Olio e Pepperoncino",
-          "description": "Garlic, oil, chilli — minimal, aggressive, perfect.",
+          "description": "Garlic, oil, chilli",
           "cook_time": "8 min",
           "tags": [
             "pasta",
@@ -378,7 +379,7 @@
         {
           "id": "cacio-e-pepe",
           "name": "Cacio e Pepe",
-          "description": "Cheese, pepper… and potential madness.",
+          "description": "Cheese and pepper",
           "cook_time": "7 min",
           "tags": [
             "pasta",
